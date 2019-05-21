@@ -13,6 +13,9 @@
 		2E1FD6612292AC860003B44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1FD6602292AC860003B44C /* Assets.xcassets */; };
 		2E1FD6642292AC860003B44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1FD6622292AC860003B44C /* LaunchScreen.storyboard */; };
 		2E1FD6672292AC860003B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6662292AC860003B44C /* main.m */; };
+		2E1FD6722292AE570003B44C /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6712292AE570003B44C /* MyClass.m */; };
+		2E1FD6762292AF310003B44C /* MyClass+HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */; };
+		2E1FD6792292B2A00003B44C /* MyClass+HelloProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		2E1FD6632292AC860003B44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E1FD6652292AC860003B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1FD6662292AC860003B44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E1FD6712292AE570003B44C /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		2E1FD6732292AE730003B44C /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		2E1FD6742292AF310003B44C /* MyClass+HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyClass+HelloWorld.h"; sourceTree = "<group>"; };
+		2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MyClass+HelloWorld.m"; sourceTree = "<group>"; };
+		2E1FD6772292B2A00003B44C /* MyClass+HelloProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyClass+HelloProperty.h"; sourceTree = "<group>"; };
+		2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MyClass+HelloProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		2E1FD6562292AC850003B44C /* LanguageFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				2E1FD6702292ADEC0003B44C /* CategoryFeatures */,
 				2E1FD6572292AC850003B44C /* AppDelegate.h */,
 				2E1FD6582292AC850003B44C /* AppDelegate.m */,
 				2E1FD65A2292AC850003B44C /* ViewController.h */,
@@ -69,6 +79,19 @@
 				2E1FD6662292AC860003B44C /* main.m */,
 			);
 			path = LanguageFeatures;
+			sourceTree = "<group>";
+		};
+		2E1FD6702292ADEC0003B44C /* CategoryFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				2E1FD6732292AE730003B44C /* MyClass.h */,
+				2E1FD6712292AE570003B44C /* MyClass.m */,
+				2E1FD6742292AF310003B44C /* MyClass+HelloWorld.h */,
+				2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */,
+				2E1FD6772292B2A00003B44C /* MyClass+HelloProperty.h */,
+				2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */,
+			);
+			path = CategoryFeatures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1FD6762292AF310003B44C /* MyClass+HelloWorld.m in Sources */,
+				2E1FD6722292AE570003B44C /* MyClass.m in Sources */,
 				2E1FD65C2292AC850003B44C /* ViewController.m in Sources */,
 				2E1FD6672292AC860003B44C /* main.m in Sources */,
+				2E1FD6792292B2A00003B44C /* MyClass+HelloProperty.m in Sources */,
 				2E1FD6592292AC850003B44C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.study.oc.languagefeatures.LanguageFeatures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.oc.languagefeatures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.study.oc.languagefeatures.LanguageFeatures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.oc.languagefeatures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
