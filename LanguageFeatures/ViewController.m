@@ -12,6 +12,9 @@
 #import "CategoryFeatures/MyClass+HelloWorld.h"
 #import "CategoryFeatures/MyClass+HelloProperty.h"
 
+#import "Student.h"
+#import "Student_Ext.h"
+
 @interface ViewController ()
 
 @end
@@ -33,6 +36,16 @@
     NSLog(@"%@",myclass.myNSString);
     NSLog(@"getter categary  dynamic value:%@",myclass.url);
     NSLog(@"getter categary  dynamic :%@",@(myclass.associateLength));
+    
+    
+    
+    Student *s =[[Student alloc] init];
+    [s sayHello];
+    [s sayHi];
+    
+    s.gender = Male;
+    //s.privateValue = 5.0f;
+    //[s privateMethod];
 }
 
 

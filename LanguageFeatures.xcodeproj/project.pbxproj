@@ -16,6 +16,7 @@
 		2E1FD6722292AE570003B44C /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6712292AE570003B44C /* MyClass.m */; };
 		2E1FD6762292AF310003B44C /* MyClass+HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */; };
 		2E1FD6792292B2A00003B44C /* MyClass+HelloProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */; };
+		2E22202F22941DEB00D03C19 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22202E22941DEB00D03C19 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MyClass+HelloWorld.m"; sourceTree = "<group>"; };
 		2E1FD6772292B2A00003B44C /* MyClass+HelloProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyClass+HelloProperty.h"; sourceTree = "<group>"; };
 		2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MyClass+HelloProperty.m"; sourceTree = "<group>"; };
+		2E22202D22941DEB00D03C19 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		2E22202E22941DEB00D03C19 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		2E22203022941E3200D03C19 /* Student_Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student_Ext.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		2E1FD6562292AC850003B44C /* LanguageFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				2E22202C22941DBF00D03C19 /* extension */,
 				2E1FD6702292ADEC0003B44C /* CategoryFeatures */,
 				2E1FD6572292AC850003B44C /* AppDelegate.h */,
 				2E1FD6582292AC850003B44C /* AppDelegate.m */,
@@ -92,6 +97,16 @@
 				2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */,
 			);
 			path = CategoryFeatures;
+			sourceTree = "<group>";
+		};
+		2E22202C22941DBF00D03C19 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E22202D22941DEB00D03C19 /* Student.h */,
+				2E22203022941E3200D03C19 /* Student_Ext.h */,
+				2E22202E22941DEB00D03C19 /* Student.m */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +183,7 @@
 				2E1FD6722292AE570003B44C /* MyClass.m in Sources */,
 				2E1FD65C2292AC850003B44C /* ViewController.m in Sources */,
 				2E1FD6672292AC860003B44C /* main.m in Sources */,
+				2E22202F22941DEB00D03C19 /* Student.m in Sources */,
 				2E1FD6792292B2A00003B44C /* MyClass+HelloProperty.m in Sources */,
 				2E1FD6592292AC850003B44C /* AppDelegate.m in Sources */,
 			);
