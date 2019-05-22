@@ -17,6 +17,8 @@
 		2E1FD6762292AF310003B44C /* MyClass+HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6752292AF310003B44C /* MyClass+HelloWorld.m */; };
 		2E1FD6792292B2A00003B44C /* MyClass+HelloProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1FD6782292B2A00003B44C /* MyClass+HelloProperty.m */; };
 		2E22202F22941DEB00D03C19 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E22202E22941DEB00D03C19 /* Student.m */; };
+		2E2220362294FDAF00D03C19 /* MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2220322294FDAF00D03C19 /* MObject.m */; };
+		2E2220372294FDAF00D03C19 /* MObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2220352294FDAF00D03C19 /* MObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		2E22202D22941DEB00D03C19 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		2E22202E22941DEB00D03C19 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		2E22203022941E3200D03C19 /* Student_Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student_Ext.h; sourceTree = "<group>"; };
+		2E2220322294FDAF00D03C19 /* MObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MObject.m; sourceTree = "<group>"; };
+		2E2220332294FDAF00D03C19 /* MObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MObject.h; sourceTree = "<group>"; };
+		2E2220342294FDAF00D03C19 /* MObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MObserver.h; sourceTree = "<group>"; };
+		2E2220352294FDAF00D03C19 /* MObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		2E1FD6562292AC850003B44C /* LanguageFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				2E2220312294FD7000D03C19 /* KVOMode */,
 				2E22202C22941DBF00D03C19 /* extension */,
 				2E1FD6702292ADEC0003B44C /* CategoryFeatures */,
 				2E1FD6572292AC850003B44C /* AppDelegate.h */,
@@ -107,6 +114,17 @@
 				2E22202E22941DEB00D03C19 /* Student.m */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		2E2220312294FD7000D03C19 /* KVOMode */ = {
+			isa = PBXGroup;
+			children = (
+				2E2220332294FDAF00D03C19 /* MObject.h */,
+				2E2220322294FDAF00D03C19 /* MObject.m */,
+				2E2220342294FDAF00D03C19 /* MObserver.h */,
+				2E2220352294FDAF00D03C19 /* MObserver.m */,
+			);
+			path = KVOMode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2220362294FDAF00D03C19 /* MObject.m in Sources */,
 				2E1FD6762292AF310003B44C /* MyClass+HelloWorld.m in Sources */,
 				2E1FD6722292AE570003B44C /* MyClass.m in Sources */,
+				2E2220372294FDAF00D03C19 /* MObserver.m in Sources */,
 				2E1FD65C2292AC850003B44C /* ViewController.m in Sources */,
 				2E1FD6672292AC860003B44C /* main.m in Sources */,
 				2E22202F22941DEB00D03C19 /* Student.m in Sources */,

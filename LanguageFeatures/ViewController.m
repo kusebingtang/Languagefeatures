@@ -15,6 +15,9 @@
 #import "Student.h"
 #import "Student_Ext.h"
 
+#import "MObject.h"
+#import "MObserver.h"
+
 @interface ViewController ()
 
 @end
@@ -46,6 +49,22 @@
     s.gender = Male;
     //s.privateValue = 5.0f;
     //[s privateMethod];
+    
+    //KVO 方式代码值修改
+    MObject *obj = [[MObject alloc] init];
+    MObserver *observer = [[MObserver alloc] init];
+    
+    //调用kvo方法监听obj的value属性的变化
+    [obj addObserver:observer forKeyPath:@"value" options:NSKeyValueObservingOptionNew context:NULL];
+    
+    //通过setter方法修改value
+    obj.value = 1;
+    // 1 通过kvc设置value能否生效？
+    [obj setValue:@2 forKey:@"value"];
+    // 2. 通过成员变量直接赋值value能否生效?
+    [obj increase];
+    
+    
 }
 
 
